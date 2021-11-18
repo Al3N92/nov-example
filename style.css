@@ -1,0 +1,152 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: white;
+  text-align: center;
+  width: 100%;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  height: 300px;
+  flex-wrap: wrap;
+}
+.header p {
+  color: white;
+}
+.button {
+  font-size: 15px;
+  display: block;
+  background-color: red;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.footer {
+  background-color: black;
+  padding: 0.5em;
+  font-size: 0.8em;
+  color: white;
+  overflow: hidden;
+}
+p.left {
+  float: left;
+  width: 50%;
+  height: 30px;
+}
+p.right {
+  float: right;
+  width: 50%;
+  height: 30px;
+}
+.text button {
+  background: rgb(99, 95, 99);
+  border-radius: 20px;
+  border: none;
+  color: wheat;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.grid > article {
+  background: rgb(112, 107, 107);
+  border: none;
+  box-shadow: 2px 2px 6px 0px black;
+  border-radius: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+.grid > article:hover {
+  transform: translate(5px);
+  box-shadow: 2px 2px 6px 0px black;
+}
+.grid > article img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.text h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.row {
+  display: flex;
+}
+.column1 {
+  flex: 50%;
+  float: left;
+  padding: 10px;
+  height: 200px;
+  background-color: rgb(5, 75, 99);
+  text-align: center;
+}
+.column2 {
+  flex: 50%;
+  float: right;
+  padding: 10px;
+  height: 200px;
+  background-color: darkgray;
+  text-align: center;
+}
+.box1 h3 {
+  font-size: 20px;
+}
+.box1 {
+  display: column;
+  width: 100%;
+  height: 150px;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.box1 h3 {
+  text-align: center;
+  display: column;
+}
+.box1 p {
+  text-align: center;
+  column-count: 2;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.box2 {
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.box2 p {
+  text-align: center;
+  font-size: 12px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
